@@ -31,15 +31,16 @@ canonifyurls = true
   archive = "archives"
 
 [author]
-  name = "Ting Luo"
-  bio = "Super bio with markdown support **COOL**"
-  job = "Your job title"
-  location = "France"
+  name = "Aa-Ting"
+  bio = "Stay hungry. Stay foolish -- Steve Jobs"
+  job = "Software Engineer"
+  location = "Taiwan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-  gravatarEmail = "thibaud.lepretre@gmail.com"
+  gravatarEmail = "tingluotw@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  # picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  picture = "images/blackcat_icon.png"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
@@ -105,7 +106,7 @@ canonifyurls = true
   # dateFormat = "2 January 2006"
 
   # Global keywords configuration. Following keywords will be add to every pages
-  # keywords = ["development", "next-gen"]
+  keywords = ["Linux", "C", "software engineer"]
 
   # Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
   # You can comment it to disable syntax highlighting
