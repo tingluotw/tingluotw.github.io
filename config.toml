@@ -14,7 +14,7 @@
 
 baseURL = "https://tingluotw.github.io"
 languageCode = "zh-tw"
-defaultContentLanguage = "en-us"
+defaultContentLanguage = "zh-tw"
 title = "Ting's Tech Blog"
 theme = "tranquilpeak"
 disqusShortname = "tranquilpeak"
@@ -40,7 +40,7 @@ canonifyurls = true
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
   # picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
-  picture = "https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?cs=srgb&dl=pexels-pixabay-208984.jpg&fm=jpg"
+  picture = "https://i.imgur.com/TiymI9o.jpg"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
@@ -71,19 +71,20 @@ canonifyurls = true
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
-[[menu.main]]
-  weight = 5
-  identifier = "about"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
 
-[[menu.links]]
-  weight = 1
-  identifier = "github"
-  name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
-  url = "https://github.com/tingluotw"
+#[[menu.links]]
+#  weight = 5
+#  identifier = "github"
+#  name = "GitHub"
+#  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+#  url = "https://github.com/tingluotw"
+
+#[[menu.main]]
+#  weight = 5
+#  identifier = "about"
+#  name = "About"
+#  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+#  url = "/#about"
 
 #[[menu.links]]
 #  weight = 2
@@ -135,7 +136,7 @@ canonifyurls = true
   #    large sidebar is swiped on all lower screens
   # 5: Display header bar on all screens and large sidebar is swiped on large screen
   # 6: Display header bar on all screens and medium sidebar is swiped
-  sidebarBehavior = 1
+  sidebarBehavior = 2
 
   # Your blog cover picture. I STRONGLY recommend you to use a CDN to speed up loading of pages.
   # There is many free CDN like Cloudinary or you can also use indirectly
@@ -143,7 +144,7 @@ canonifyurls = true
   # Current image is on AWS S3 and delivered by AWS CloudFront.
   # Otherwise put your image, for example `cover.jpg` in folder `static/images/`,
   # and use relative url : `images/cover.jpg`
-  coverImage = "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg"
+  coverImage = "https://i.imgur.com/oUTZJLQ.jpg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
