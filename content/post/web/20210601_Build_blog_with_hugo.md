@@ -11,6 +11,7 @@ keywords:
 - Hugo
 - Github Pages
 showTags: true
+showPagination: true
 summary: "用Hugo 和Github pages 建一個自己的部落格"
 ---
 
@@ -227,4 +228,5 @@ summary: "用Hugo 和Github pages 建一個自己的部落格"
 # Reference:
     [1] 使用靜態網頁產生器製作網站: https://michaelchen.tech/technical-blogging/static-site-generator/
     [2] Hugo的基本安装: https://zhuanlan.zhihu.com/p/35097705://zhuanlan.zhihu.com/p/350977057 
-    [3] Hugo 貼身打造個人部落格 https://ithelp.ithome.com.tw/users/20106430/ironman/3613
+    [3] Hugo 貼身打造個人部落格: https://ithelp.ithome.com.tw/users/20106430/ironman/3613
+    [4] Hugo 的專案結構: https://carsonwah.github.io/15213187969014.html
