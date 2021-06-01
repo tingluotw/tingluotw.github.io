@@ -116,7 +116,7 @@ summary: "用Hugo 和Github pages 建一個自己的部落格"
   `hugo new post/my-first-post.md`
 
   md file 就可以用markdown language 來寫文章啦～學習markdown 語法又是另一回事了...
-  另外實驗發現不一定要用hugo new 這個指令, 用vim post/xxx.md 建立的md file 一樣可以顯示出來,
+  另外實驗發現用vim post/xxx.md 建立的md file 一樣可以顯示出來(不過沒有hugo 幫你產生的post meta data在前面)
   看起來hugo 會用時間來排序所有的文章。另外注意 **所有md files 一定要放在post/下** , 至於post/下有
   多少層folders都沒關係
 

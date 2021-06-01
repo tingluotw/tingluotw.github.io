@@ -32,7 +32,7 @@ canonifyurls = true
 
 [author]
   name = "Aa-Ting"
-  bio = "Stay hungry. Stay foolish -- Steve Jobs"
+  bio = "紀錄所有學過的技術細節, 內容不一定正確, 還會繼續修正"
   job = "Software Engineer"
   location = "Taiwan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
