@@ -17,7 +17,7 @@ languageCode = "zh-tw"
 defaultContentLanguage = "zh-tw"
 title = "Ting's Tech Blog"
 theme = "tranquilpeak"
-disqusShortname = "tranquilpeak"
+# disqusShortname = "tranquilpeak"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
@@ -32,7 +32,7 @@ canonifyurls = true
 
 [author]
   name = "Aa-Ting"
-  bio = "紀錄所有學過的技術細節, 內容不一定正確, 還會繼續修正"
+  bio = "Keep going!"
   job = "Software Engineer"
   location = "Taiwan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
@@ -216,3 +216,8 @@ canonifyurls = true
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

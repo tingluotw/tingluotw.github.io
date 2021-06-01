@@ -221,11 +221,24 @@ summary: "用Hugo 和Github pages 建一個自己的部落格"
   
   現在點開https://tingluotw.github.io 就可以看到成果了！
 
-# Little tips
+# 12. Enable HTML Tags
+  Hugo 目前使用的markdown parser是Goldmark, 預設不能在markdown 區塊內插入html,
+  不過我們為了能夠使用html `<font>` `<table>` 等標籤, 需要將其打開
+
+  在config.toml 中加入下列設定即可(將unsafe 設為true即可)
+
+  ```
+  [markup]
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe=true
+  ```
+
+# 13. Little tips
   Local 端編寫文章時, 可以下指令`hugo server -D &` 將指令放到background 執行, 就能夠改完檔案馬上在
   local 端用browser 輸入http://localhost:1313 預覽文章, 不用等到push 文章到remote repo 後再看
 
-# Reference:
+# 14. Reference:
     [1] 使用靜態網頁產生器製作網站: https://michaelchen.tech/technical-blogging/static-site-generator/
     [2] Hugo的基本安装: https://zhuanlan.zhihu.com/p/35097705://zhuanlan.zhihu.com/p/350977057 
     [3] Hugo 貼身打造個人部落格: https://ithelp.ithome.com.tw/users/20106430/ironman/3613
