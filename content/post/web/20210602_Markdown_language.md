@@ -1,5 +1,5 @@
 ---
-title: "Markdown Syntax"
+title: "Markdown 語法"
 date: 2021-06-01T12:17:13+08:00
 categories:
 - Misc
