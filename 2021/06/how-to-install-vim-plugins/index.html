@@ -1,0 +1,134 @@
+<!doctype html><html lang=zh-tw><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=generator content="Hugo 0.83.1 with theme Tranquilpeak 0.4.8-BETA"><meta name=author content="Aa-Ting"><meta name=keywords content="Vim Plugins,Linux,C,software engineer"><meta name=description content="Introduce useful plugins that I use, and how to install them."><meta property="og:description" content="Introduce useful plugins that I use, and how to install them."><meta property="og:type" content="article"><meta property="og:title" content="How to install Vim Plugins?"><meta name=twitter:title content="How to install Vim Plugins?"><meta property="og:url" content="https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><meta property="twitter:url" content="https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><meta property="og:site_name" content="Ting's Tech Blog"><meta property="og:description" content="Introduce useful plugins that I use, and how to install them."><meta name=twitter:description content="Introduce useful plugins that I use, and how to install them."><meta property="og:locale" content="zh-tw"><meta property="article:published_time" content="2021-06-02T12:12:31"><meta property="article:modified_time" content="2021-06-02T12:12:31"><meta property="article:section" content="Linux Tools"><meta property="article:tag" content="Vim"><meta name=twitter:card content="summary"><meta property="og:image" content="https://i.imgur.com/TiymI9o.jpg"><meta property="twitter:image" content="https://i.imgur.com/TiymI9o.jpg"><title>How to install Vim Plugins?</title><link rel=icon href=https://tingluotw.github.io/favicon.png><link rel=canonical href=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin=anonymous><link rel=stylesheet href=https://tingluotw.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css></head><body><div id=blog><header id=header data-behavior=4><i id=btn-open-sidebar class="fa fa-lg fa-bars"></i><div class=header-title><a class=header-title-link href=https://tingluotw.github.io/>Ting's Tech Blog</a></div><a class=header-right-picture href=https://tingluotw.github.io/#about><img class=header-picture src=https://i.imgur.com/TiymI9o.jpg alt=作者的圖片></a></header><nav id=sidebar data-behavior=4><div class=sidebar-container><div class=sidebar-profile><a href=https://tingluotw.github.io/#about><img class=sidebar-profile-picture src=https://i.imgur.com/TiymI9o.jpg alt=作者的圖片></a><h4 class=sidebar-profile-name>Aa-Ting</h4><h5 class=sidebar-profile-bio>Keep going!</h5></div><ul class=sidebar-buttons><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/><i class="sidebar-button-icon fa fa-lg fa-home"></i>
+<span class=sidebar-button-desc>首頁</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/categories><i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+<span class=sidebar-button-desc>分類</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/tags><i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+<span class=sidebar-button-desc>標籤</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/archives><i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+<span class=sidebar-button-desc>所有文章</span></a></li></ul><ul class=sidebar-buttons></ul><ul class=sidebar-buttons></ul></div></nav><div id=main data-behavior=4 class=hasCoverMetaIn><article class=post itemscope itemtype=http://schema.org/BlogPosting><div class="post-header main-content-wrap text-left"><h1 class=post-title itemprop=headline>How to install Vim Plugins?</h1><div class="postShorten-meta post-meta"><time itemprop=datePublished datetime=2021-06-02T12:12:31+08:00>六月 2, 2021</time>
+<span>分類</span>
+<a class=category-link href=https://tingluotw.github.io/categories/linux-tools>Linux Tools</a></div></div><div class="post-content markdown" itemprop=articleBody><div class=main-content-wrap><p>In this post, I am going to introduce some useful plugins that I use,
+and talk about how to install vim plugins in a easiest way.</p><h1 id=vim-plugins>Vim Plugins</h1><p><a href=https://vimawesome.com/>Vim Awesome</a> is a great website for you to explore
+all sort of vim plugins that you can use.</p><p>Below are some vim plugins that I use, and I just recorded the ways to install
+them here. See more details about them in Vim Awesome.</p><h2 id=1-vundlehttpsgithubcomvundlevimvundlevim-a-plugin-manager>1. <a href=https://github.com/VundleVim/Vundle.vim>Vundle</a>: A plugin manager</h2><p>A plugin manager can manage all the plugins that you installed.
+For example, you can use it install or delete a plugin easily.</p><ol><li><p>Clone the source code of Vundle to a specific directory.
+<code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></p></li><li><p>Config the plugin in .vimrc</p></li></ol><p><img src=https://i.imgur.com/pZeCX64.png alt="Setting in .vimrc"></p><p>The most important thing is to add <code>.vim/bundle/Vundle.vim</code> into vim runtimepath,
+so that vim can execute Vundle at the first time.
+Please ignore line 33 right now, I&rsquo;ll discuss it later.</p><h3 id=vundle-command>Vundle command</h3><h4 id=1-install-a-plugin>1. Install a plugin</h4><pre><code>  1. Open up .vimrc. Add `Plugin [plugin name]` between `call vundle#begin()` and `call vundle#end()`
+  (like line 37-44, but you don't have to install all these things like me, just
+   install the plugins that you want)
+  2. Open a vim page and type the command `:PluginInstall`
+</code></pre><h4 id=2-remove-a-plugin>2. Remove a plugin</h4><pre><code>  1. Open up .vimrc. Mark off or remove the plugin that you want to remove.
+  2. Open a vim page and type the command `:PluginClean`
+</code></pre><h4 id=3-others>3. Others</h4><pre><code>  :h vundle         - more details
+  :PluginList       - lists configured plugins
+  :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+  :PluginSearch foo - searches for foo; append `!` to refresh local cache
+  :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+</code></pre><h3 id=note>Note:</h3><p>All plugins below can be installed by using Vundle command.
+If you want to install a plugin manually(without Vundle), just follow the steps below:
+(I use the plugin &lsquo;Fugitive&rsquo; as an example)</p><ol><li>Download .zip package for the plugin</li><li>Create a folder <code>mkdir -p ~/.vim/pack/fugitive/start</code></li><li>Unzip the package and put it in the folder in step2</li><li>Add the path in .vimrc <code>set rtp+=~/.vim/pack/fugitive/start</code>
+Just replace the &lsquo;fugitive&rsquo; by your plugin names and you&rsquo;ll make it.</li></ol><h2 id=2-nerdtreehttpsgithubcompreservimnerdtregithubcompreservimnerdtree-a-file-system-explorer>2. <a href=https://github.com/preservim/nerdtre://github.com/preservim/nerdtree>NERDTree</a>: A file system explorer</h2><p>By using NERDTree, you can view whole file directories on the left side while you open any file.</p><p><img src=https://i.imgur.com/k4DBqTf.png alt=NERDTree></p><h3 id=nerdtree-command>NERDTree command</h3><h4 id=1-open-the-nerdtree>1. Open the NERDTree</h4><pre><code>  :NERDTreeToggle
+</code></pre><h4 id=2-set-shortcuts-to-open-nerdtree>2. Set shortcuts to open NERDTree</h4><p>Here, we use Ctrl+t as a shortcut, you could use F9,F7&mldr;,etc.
+Open up your .vimrc and add</p><pre><code>  nnoremap &lt;C-t&gt; :NERDTreeToggle&lt;CR&gt;
+</code></pre><h4 id=3-more-tips-docshttpsgithubcompreservimnerdtreeblobmasterdocnerdtreetxt>3. more tips (<a href=https://github.com/preservim/nerdtree/blob/master/doc/NERDTree.txt>Docs</a>)</h4><p>vim config settings(add in your .vimrc as well)</p><pre><code>  let g:NERDTreeMouseMode=3  &quot;optional: single click to open files/directoris
+  let NERDTreeWinPos=1       &quot;set NERDTree window on the left side of window
+</code></pre><p>cmd to switch between a NERDTree window and a file window</p><pre><code>  Ctrl+w
+</code></pre><h2 id=3-ctagshttpsgithubcomuniversal-ctagsctags-a-popular-tool-to-trace-code>3. <a href=https://github.com/universal-ctags/ctags>Ctags</a>: a popular tool to trace code</h2><p>Ctags can help you jump to the definition of a variables and functions.
+We usually use it with Cscope.</p><h3 id=ctags-command>Ctags command</h3><h4 id=1-generate-tags>1. Generate tags</h4><p>Just goto the directory that you want to start tracing code and type down this command
+in a command line:</p><pre><code>ctags -R *
+</code></pre><p>Recurse into directories and generate ctags file in current folder.</p><p>After executing this command, you will see a folder named &lsquo;tags&rsquo; in current folder.
+Now you can use commands below to trace your code.</p><p>Note that if you generate the tags in root folder, vim cannot find tags when you
+are in the inner folders. Just add this in your .vimrc to tell vim to search for tags
+upward to the root folder.
+<code>set tags=./tags,./TAGS,tags;~,TAGS;~</code></p><h4 id=2-shortcuts-to-trace-code>2. Shortcuts to trace code</h4><pre><code>Ctrl-] or Ctrl-Left_MouseClick       - jump to the definition of the tag
+Ctrl-t 或是 Ctrl-Right_MouseClick    - back to the position of tag
+:ts &lt;tag&gt;  &lt;RET&gt;                     - Search for a particular tag
+:tn                                  - Go to the next definition for the last tag
+:tp                                  - Go to the previous definition for the last tag
+:ts                                  - List all of the definitions of the last tag
+</code></pre><h2 id=4-cscopehttpsgithubcombrookhongcscopevim-another-great-tool-to-trace-code>4. <a href=https://github.com/brookhong/cscope.vim>Cscope</a>: another great tool to trace code</h2><p>Cscope is a great tool that allows you to see where variables and functions have been used.</p><h3 id=cscope-command>Cscope command</h3><h4 id=1-generate-cscope-db-in-a-target-directory>1. Generate cscope db in a target directory</h4><p>Just goto the directory that you want to start tracing code and type down this command
+in a command line:</p><pre><code>cscope -Rbq
+   -R: Recurse directories for files
+   -b: Build the cross-reference only
+   -q: Build an inverted index for quick symbol searching
+       (Build cscope.in.out &amp; cscope.po.out to increate searching speed)
+   -k: Kernel mode, don't use /usr/include for #include files
+</code></pre><p>Note that Cscope uses related paths but ctags uses absolute paths.</p><h4 id=2-advanced-tips-to-generate-cscope-db1>2. Advanced tips to generate cscope db[1]</h4><h5 id=1-generate-cscopefiles>1. Generate cscope.files</h5><p>By default, Cscope only parses C, lex and yacc files(i.e .c, .h, .l, .y)
+However, we might want to focus on some specific files like python, java or
+some specific subdirectories. In this case, we can use linux <code>find</code> command
+to make a list of the files that we are interested in and save them in cscope.files.
+For example: <code>find . -name '*.py' > cscope.files</code></p><h5 id=2-generate-cscopeout>2. Generate cscope.out</h5><p>Now, it&rsquo;s time to ask Cscope to generate a Cscope database for us.
+<code>cscope -Rbqk</code>
+Now, you&rsquo;ll see these files in current directory: cscope.in.out, cscope.po.out, cscope.out</p><h5 id=3-add-cscopeout>3. Add cscope.out</h5><p>When you open a file, we have to tell vim where&rsquo;s the cscope.out, so that we can use
+Cscope command to trace our code in this file.
+<code>:cs add /direcotry/../cscope.out</code></p><p>Once you complete these steps, you can use the command below to trace your code.</p><h4 id=3-shortcuts-to-trace-code>3. Shortcuts to trace code</h4><pre><code>ctrl+\ s    &quot;(Symbol) List the symbols, includes definitions and function calls.
+ctrl+\ g    &quot;(Global) Find the definition. As same as [Ctrl+]] in ctags
+ctrl+\ c    &quot;(Caller) List functions calling this function.
+ctrl+\ d    &quot;(Called) List functions called by this function.
+ctrl+\ t    &quot;(Text)   Find the text strings
+ctrl+\ f    &quot;(File)   Find the file
+ctrl+\ i    &quot;(Include)Find the files that include the file named by current string
+ctrl+\ e    &quot;(egrep)  Find the egrep pattern
+</code></pre><p>or you could use <code>:cs cmd</code> to do the same thing
+:cs help -for more info
+:cs add -add a new database
+:cs find -query for something(s|g|c|d|t|f|i|e)
+:cs reset -reinit the connections</p><h4 id=4-generate-cscope-files-and-add-cscopeout-automatically-2345>4. Generate cscope files and add cscope.out automatically [2][3][4][5]</h4><p>I wrote some functions in .vimrc to speed up the process. Basically, my policy is:</p><pre><code>1. When I open a file by using vim, I can press F7 to run run_cscope.sh.
+   It will generate a `cscope` folder, and a cscope database.
+   Next, it will add cscope.out, so that I can use Cscope command to trace any code.
+2. Next time, when I open any file, .vimrc will find the `cscope.out` in cscope
+   folder and add cscope.out again.
+</code></pre><p>Run_cscope.sh</p><pre><code>#!/bin/sh
+DIR=&quot;/Users/ting/mm/cscope&quot;
+rm -rf ${DIR}
+mkdir ${DIR}
+TARGET_DIR=&quot;/Users/ting/mm&quot;
+find ${TARGET_DIR} -name &quot;*.[chxsS]&quot; -print &gt; ${DIR}/cscope.files
+cd ${DIR}
+cscope -Rbq
+</code></pre><p>.vimrc</p><pre><code>&quot; Add_cscope_out()
+&quot; When a user use vim to open any file, this function will be called automatically.
+&quot; If user ran 'cscope -Rbq' before, then the cscope.out will be added right away.
+&quot;
+&quot; Things that the function does:
+&quot; 1. find the folder named 'cscope'(start from current folder and search upwards)
+&quot; 2. if the folder is non empty, we add cscope.out into vim
+
+function! Add_cscope_out()
+	let cscope_folder=finddir(&quot;cscope&quot;, &quot;.;&quot;)
+	if !empty(cscope_folder)
+		let cscope_out=cscope_folder.&quot;/cscope.out&quot;
+		if !empty(cscope_out) &amp;&amp; filereadable(cscope_out)
+			exe &quot;cs add &quot; cscope_out
+		endif
+	endif
+endfunction
+
+&quot; Create_cscope_out()
+&quot; Triggered by a user when he/she opens any file and presses F7.
+&quot; The function will:
+&quot; 1. run a script to create cscope.in and cscope.out
+&quot;    files in a folder named 'cscope'
+&quot; 2. run Add_cscope_out()
+
+function! Create_cscope_out()
+	exe &quot;! sh /Users/ireneluo/mm/Run_cscope.sh&quot;
+	call Add_cscope_out()
+endfunction
+
+&quot;if already installed cscope, add cscope.out automatically
+if has(&quot;cscope&quot;)
+	silent call Add_cscope_out()
+endif
+
+nmap &lt;silent&gt; &lt;F7&gt; :call Create_cscope_out()&lt;CR&gt;
+</code></pre><h2 id=5-tagbarhttpsgithubcompreservimtagbar>5. <a href=https://github.com/preservim/tagbar>Tagbar</a></h2><p>Tagbar shows variables and function names in a individual window while you open a source code.
+<img src=https://i.imgur.com/5UGALLi.png alt=Tagbar></p><h2 id=shortcut-to-enable-it>Shortcut to enable it</h2><pre><code>nmap &lt;F8&gt; :TagbarToggle&lt;CR&gt;
+</code></pre><h2 id=6-others-will-be-added-in-the-future>6. Others (will be added in the future)</h2><ol><li>Fugitive</li><li>vim surround</li><li>Nerd Comment</li></ol><h2 id=7-notes>7. Notes</h2><p>AOSP Kernel can generate tags by executing:
+<code>make ctag cscope ARCH=arm64</code> (if your platform is arm64)</p><h2 id=8-reference>8. Reference</h2><p>[1] <a href=http://cscope.sourceforge.net/large_projects.html>Using Cscope on large projects (example: the Linux kernel)</a>
+[2] <a href=https://developer.ibm.com/technologies/linux/articles/l-vim-script-1/>Scripting the vim editor</a>
+[3] <a href=https://vimhelp.org/eval.txt.html#finddir%28%29>Vim Reference Manual</a>
+[4] <a href=http://cscope.sourceforge.net/cscope_vim_tutorial.html>The Vim/Cscope Tutorial</a>
+[5] <a href=https://shaynechen.gitlab.io/vim-cscope/>Vim + Cscope – 綁定快捷鍵及快速配置於大型Project</a></p></div></div><div id=post-footer class="post-footer main-content-wrap"><div class=post-footer-tags><span class="text-color-light text-small">標籤</span><br><a class="tag tag--primary tag--small" href=https://tingluotw.github.io/tags/vim/>Vim</a></div><div class=post-actions-wrap><nav><ul class="post-actions post-action-nav"><li class=post-action><a class="post-action-btn btn btn--disabled"><i class="fa fa-angle-left"></i>
+<span class="hide-xs hide-sm text-small icon-ml">下一篇</span></a></li><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://tingluotw.github.io/2021/06/markdown-%E8%AA%9E%E6%B3%95/ data-tooltip="Markdown 語法"><span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+<i class="fa fa-angle-right"></i></a></li></ul></nav><ul class="post-actions post-action-share"><li class="post-action hide-lg hide-md hide-sm"><a class="post-action-btn btn btn--default btn-open-shareoptions" href=#btn-open-shareoptions><i class="fa fa-share-alt"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://www.facebook.com/sharer/sharer.php?u=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><i class="fa fa-facebook-official"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://twitter.com/intent/tweet?text=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><i class="fa fa-twitter"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://plus.google.com/share?url=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><i class="fa fa-google-plus"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#><i class="fa fa-list"></i></a></li></ul></div></div></article><footer id=footer class=main-content-wrap><span class=copyrights>&copy; 2021 Aa-Ting. All Rights Reserved</span></footer></div><div id=bottom-bar class=post-bottom-bar data-behavior=4><div class=post-actions-wrap><nav><ul class="post-actions post-action-nav"><li class=post-action><a class="post-action-btn btn btn--disabled"><i class="fa fa-angle-left"></i>
+<span class="hide-xs hide-sm text-small icon-ml">下一篇</span></a></li><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://tingluotw.github.io/2021/06/markdown-%E8%AA%9E%E6%B3%95/ data-tooltip="Markdown 語法"><span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+<i class="fa fa-angle-right"></i></a></li></ul></nav><ul class="post-actions post-action-share"><li class="post-action hide-lg hide-md hide-sm"><a class="post-action-btn btn btn--default btn-open-shareoptions" href=#btn-open-shareoptions><i class="fa fa-share-alt"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://www.facebook.com/sharer/sharer.php?u=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><i class="fa fa-facebook-official"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://twitter.com/intent/tweet?text=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><i class="fa fa-twitter"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://plus.google.com/share?url=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/"><i class="fa fa-google-plus"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#><i class="fa fa-list"></i></a></li></ul></div></div><div id=share-options-bar class=share-options-bar data-behavior=4><i id=btn-close-shareoptions class="fa fa-close"></i><ul class=share-options><li class=share-option><a class=share-option-btn target=new href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftingluotw.github.io%2F2021%2F06%2Fhow-to-install-vim-plugins%2F"><i class="fa fa-facebook-official"></i><span>分享到 Facebook</span></a></li><li class=share-option><a class=share-option-btn target=new href="https://twitter.com/intent/tweet?text=https%3A%2F%2Ftingluotw.github.io%2F2021%2F06%2Fhow-to-install-vim-plugins%2F"><i class="fa fa-twitter"></i><span>分享到 Twitter</span></a></li><li class=share-option><a class=share-option-btn target=new href="https://plus.google.com/share?url=https%3A%2F%2Ftingluotw.github.io%2F2021%2F06%2Fhow-to-install-vim-plugins%2F"><i class="fa fa-google-plus"></i><span>分享到 Google+</span></a></li></ul></div><div id=share-options-mask class=share-options-mask></div></div><div id=about><div id=about-card><div id=about-btn-close><i class="fa fa-remove"></i></div><img id=about-card-picture src=https://i.imgur.com/TiymI9o.jpg alt=作者的圖片><h4 id=about-card-name>Aa-Ting</h4><div id=about-card-bio>Keep going!</div><div id=about-card-job><i class="fa fa-briefcase"></i><br>Software Engineer</div><div id=about-card-location><i class="fa fa-map-marker"></i><br>Taiwan</div></div></div><div id=cover style=background-image:url(https://i.imgur.com/oUTZJLQ.jpg)></div><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin=anonymous></script><script src=https://tingluotw.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js></script><script lang=javascript>window.onload=updateMinWidth,window.onresize=updateMinWidth,document.getElementById("sidebar").addEventListener("transitionend",updateMinWidth);function updateMinWidth(){var b=document.getElementById("sidebar"),a=document.getElementById("main"),c,d,e;a.style.minWidth="",c=getComputedStyle(a).getPropertyValue("min-width"),d=getComputedStyle(b).getPropertyValue("width"),e=getComputedStyle(b).getPropertyValue("left"),a.style.minWidth=`calc(${c} - ${d} - ${e})`}</script><script>$(document).ready(function(){hljs.configure({classPrefix:'',useBR:!1}),$('pre.code-highlight > code, pre > code').each(function(b,a){$(this).hasClass('codeblock')||$(this).addClass('codeblock'),hljs.highlightBlock(a)})})</script></body></html>
