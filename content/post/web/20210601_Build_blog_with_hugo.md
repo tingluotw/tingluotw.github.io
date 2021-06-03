@@ -3,7 +3,7 @@ title: "Use Hugo + Github Pages to build a blog"
 date: 2021-05-29T14:34:37+08:00
 draft: false
 categories:
-- Hugo
+- Web
 tags:
 - Hugo
 - Github Pages
