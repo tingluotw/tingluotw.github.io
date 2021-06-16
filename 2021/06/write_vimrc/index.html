@@ -1,0 +1,132 @@
+<!doctype html><html lang=zh-tw><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=generator content="Hugo 0.83.1 with theme Tranquilpeak 0.4.8-BETA"><meta name=author content="Aa-Ting"><meta name=keywords content="tech,Linux,C,software engineer"><meta name=description content="set number set autowrite &#34;auto save &#34;set tabstop=4 &#34;how many spaces should be inserted in a tab &#34;a tab will be replaced by 1 or more space, usually use with tabstop &#34;set expandtab set mouse=a &#34;enable mouse-reporting function at every mode set hlsearch set clipboard=unnamed &#34;insert indent automatically according to the language &#34;set cindent &#34;an indent should be with 4 spaces &#34;set shiftwidth=4 &#34;let mapleader=&#34;\<Space>&#34; &#34; line highlight highlight LineNr ctermfg=grey ctermbg=White hi CursorLine cterm=none ctermbg=DarkMagenta ctermfg=White syntax on &#34;---set for powerline set laststatus=2 let g:airline_powerline_fonts = 1 &#34;enable powerline-fonts &#34;set for solarized syntax enable set background=dark set t_Co=16 let g:solarized_termcolors=256 colorscheme solarized &#34;ctags can search tags upwards to the root folder set tags=."><meta property="og:description" content="set number set autowrite &#34;auto save &#34;set tabstop=4 &#34;how many spaces should be inserted in a tab &#34;a tab will be replaced by 1 or more space, usually use with tabstop &#34;set expandtab set mouse=a &#34;enable mouse-reporting function at every mode set hlsearch set clipboard=unnamed &#34;insert indent automatically according to the language &#34;set cindent &#34;an indent should be with 4 spaces &#34;set shiftwidth=4 &#34;let mapleader=&#34;\<Space>&#34; &#34; line highlight highlight LineNr ctermfg=grey ctermbg=White hi CursorLine cterm=none ctermbg=DarkMagenta ctermfg=White syntax on &#34;---set for powerline set laststatus=2 let g:airline_powerline_fonts = 1 &#34;enable powerline-fonts &#34;set for solarized syntax enable set background=dark set t_Co=16 let g:solarized_termcolors=256 colorscheme solarized &#34;ctags can search tags upwards to the root folder set tags=."><meta property="og:type" content="article"><meta property="og:title" content="Write_vimrc"><meta name=twitter:title content="Write_vimrc"><meta property="og:url" content="https://tingluotw.github.io/2021/06/write_vimrc/"><meta property="twitter:url" content="https://tingluotw.github.io/2021/06/write_vimrc/"><meta property="og:site_name" content="Ting's Tech Blog"><meta property="og:description" content="set number set autowrite &#34;auto save &#34;set tabstop=4 &#34;how many spaces should be inserted in a tab &#34;a tab will be replaced by 1 or more space, usually use with tabstop &#34;set expandtab set mouse=a &#34;enable mouse-reporting function at every mode set hlsearch set clipboard=unnamed &#34;insert indent automatically according to the language &#34;set cindent &#34;an indent should be with 4 spaces &#34;set shiftwidth=4 &#34;let mapleader=&#34;\<Space>&#34; &#34; line highlight highlight LineNr ctermfg=grey ctermbg=White hi CursorLine cterm=none ctermbg=DarkMagenta ctermfg=White syntax on &#34;---set for powerline set laststatus=2 let g:airline_powerline_fonts = 1 &#34;enable powerline-fonts &#34;set for solarized syntax enable set background=dark set t_Co=16 let g:solarized_termcolors=256 colorscheme solarized &#34;ctags can search tags upwards to the root folder set tags=."><meta name=twitter:description content="set number set autowrite &#34;auto save &#34;set tabstop=4 &#34;how many spaces should be inserted in a tab &#34;a tab will be replaced by 1 or more space, usually use with tabstop &#34;set expandtab set mouse=a &#34;enable mouse-reporting function at every mode set hlsearch set clipboard=unnamed &#34;insert indent automatically according to the language &#34;set cindent &#34;an indent should be with 4 spaces &#34;set shiftwidth=4 &#34;let mapleader=&#34;\<Space>&#34; &#34; line highlight highlight LineNr ctermfg=grey ctermbg=White hi CursorLine cterm=none ctermbg=DarkMagenta ctermfg=White syntax on &#34;---set for powerline set laststatus=2 let g:airline_powerline_fonts = 1 &#34;enable powerline-fonts &#34;set for solarized syntax enable set background=dark set t_Co=16 let g:solarized_termcolors=256 colorscheme solarized &#34;ctags can search tags upwards to the root folder set tags=."><meta property="og:locale" content="zh-tw"><meta property="article:published_time" content="2021-06-16T20:19:42"><meta property="article:modified_time" content="2021-06-16T20:19:42"><meta property="article:section" content="category"><meta property="article:section" content="subcategory"><meta property="article:tag" content="tag1"><meta property="article:tag" content="tag2"><meta name=twitter:card content="summary"><meta property="og:image" content="https://i.imgur.com/TiymI9o.jpg"><meta property="twitter:image" content="https://i.imgur.com/TiymI9o.jpg"><title>Write_vimrc</title><link rel=icon href=https://tingluotw.github.io/favicon.png><link rel=canonical href=https://tingluotw.github.io/2021/06/write_vimrc/><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin=anonymous><link rel=stylesheet href=https://tingluotw.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css></head><body><div id=blog><header id=header data-behavior=4><i id=btn-open-sidebar class="fa fa-lg fa-bars"></i><div class=header-title><a class=header-title-link href=https://tingluotw.github.io/>Ting's Tech Blog</a></div><a class=header-right-picture href=https://tingluotw.github.io/#about><img class=header-picture src=https://i.imgur.com/TiymI9o.jpg alt=作者的圖片></a></header><nav id=sidebar data-behavior=4><div class=sidebar-container><div class=sidebar-profile><a href=https://tingluotw.github.io/#about><img class=sidebar-profile-picture src=https://i.imgur.com/TiymI9o.jpg alt=作者的圖片></a><h4 class=sidebar-profile-name>Aa-Ting</h4><h5 class=sidebar-profile-bio>Keep going!</h5></div><ul class=sidebar-buttons><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/><i class="sidebar-button-icon fa fa-lg fa-home"></i>
+<span class=sidebar-button-desc>首頁</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/categories><i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+<span class=sidebar-button-desc>分類</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/tags><i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+<span class=sidebar-button-desc>標籤</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tingluotw.github.io/archives><i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+<span class=sidebar-button-desc>所有文章</span></a></li></ul><ul class=sidebar-buttons></ul><ul class=sidebar-buttons></ul></div></nav><div id=main data-behavior=4 class=hasCoverMetaIn><article class=post itemscope itemtype=http://schema.org/BlogPosting><div class="post-header main-content-wrap text-left"><h1 class=post-title itemprop=headline>Write_vimrc</h1><div class="postShorten-meta post-meta"><time itemprop=datePublished datetime=2021-06-16T20:19:42+08:00>六月 16, 2021</time>
+<span>分類</span>
+<a class=category-link href=https://tingluotw.github.io/categories/category>category</a>,
+<a class=category-link href=https://tingluotw.github.io/categories/subcategory>subcategory</a></div></div><div class="post-content markdown" itemprop=articleBody><div class=main-content-wrap><pre><code>set number
+set autowrite &quot;auto save
+&quot;set tabstop=4 &quot;how many spaces should be inserted in a tab
+
+&quot;a tab will be replaced by 1 or more space, usually use with tabstop
+&quot;set expandtab
+
+set mouse=a &quot;enable mouse-reporting function at every mode
+set hlsearch
+set clipboard=unnamed
+
+&quot;insert indent automatically according to the language
+&quot;set cindent
+
+&quot;an indent should be with 4 spaces
+&quot;set shiftwidth=4
+
+&quot;let mapleader=&quot;\&lt;Space&gt;&quot;
+&quot; line highlight
+highlight LineNr ctermfg=grey ctermbg=White
+hi CursorLine cterm=none ctermbg=DarkMagenta ctermfg=White
+syntax on
+
+&quot;---set for powerline
+set laststatus=2
+let g:airline_powerline_fonts = 1 &quot;enable powerline-fonts
+
+&quot;set for solarized
+syntax enable
+set background=dark
+set t_Co=16
+let g:solarized_termcolors=256
+colorscheme solarized
+
+&quot;ctags can search tags upwards to the root folder
+set tags=./tags,./TAGS,tags;~,TAGS;~
+
+&quot;---start the setting of vundle
+set nocompatible              &quot; be iMproved, required(disable vi support)
+filetype off                  &quot; required
+
+&quot;set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/pack/fugitive/start
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'majutsushi/tagbar'
+Plugin 'chazy/cscope_maps'
+Plugin 'universal-ctags/ctags'
+
+
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+&quot;---end the setting of vundle
+
+&quot; Add_cscope_out()
+&quot; When a user use vim to open any file,
+&quot; this function will be called automatically.
+&quot; If user ran 'cscope -Rbq' before, then the
+&quot; cscope.out will be added right away.
+&quot;
+&quot; Things that the function does:
+&quot; 1. find the folder named 'cscope'
+&quot; 2. if the folder is non empty, we add cscope.out into vim
+function! Add_cscope_out()
+	let cscope_folder=finddir(&quot;cscope&quot;, &quot;.;&quot;)
+	if !empty(cscope_folder)
+		let cscope_out=cscope_folder.&quot;/cscope.out&quot;
+		if !empty(cscope_out) &amp;&amp; filereadable(cscope_out)
+			exe &quot;cs add &quot; cscope_out
+		endif
+	endif
+endfunction
+
+&quot; Create_cscope_out()
+&quot; Triggered by a user when he/she opens any file
+&quot; and presses F7.
+&quot; The function will:
+&quot; 1. run a script to create cscope.in and cscope.out
+&quot;    files in a folder named 'cscope'
+&quot; 2. run Add_cscope_out()
+function! Create_cscope_out()
+	exe &quot;! sh /Users/ireneluo/mm/Run_cscope.sh&quot;
+	&quot;exe echo \&quot;create cscope db\&quot;&quot;
+	&quot;exe echo \&quot;add cscope.out\&quot;&quot;
+	call Add_cscope_out()
+endfunction
+
+&quot;if already installed cscope,
+&quot;add cscope.out automatically
+if has(&quot;cscope&quot;)
+	silent call Add_cscope_out()
+endif
+
+
+&quot;todo: 
+&quot; 1. use dynamic path to place cscope file
+&quot; refine the if-else section
+
+
+&quot;---hotkey
+&quot;----------for NERDTree-------------
+nmap &lt;silent&gt; &lt;F9&gt; :NERDTreeToggle&lt;CR&gt;
+nmap &lt;silent&gt; &lt;F8&gt; :TagbarToggle&lt;CR&gt;
+&quot;----------for Cscope-------------
+nmap &lt;silent&gt; &lt;F7&gt; :call Create_cscope_out()&lt;CR&gt;
+nmap zs :cs find s &lt;C-R&gt;=expand(&quot;&lt;cword&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap zg :cs find g &lt;C-R&gt;=expand(&quot;&lt;cword&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap zc :cs find c &lt;C-R&gt;=expand(&quot;&lt;cword&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap zt :cs find t &lt;C-R&gt;=expand(&quot;&lt;cword&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap ze :cs find e &lt;C-R&gt;=expand(&quot;&lt;cword&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap zf :cs find f &lt;C-R&gt;=expand(&quot;&lt;cfile&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap zi :cs find i &lt;C-R&gt;=expand(&quot;&lt;cfile&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+nmap zd :cs find d &lt;C-R&gt;=expand(&quot;&lt;cword&gt;&quot;)&lt;CR&gt;&lt;CR&gt;
+</code></pre></div></div><div id=post-footer class="post-footer main-content-wrap"><div class=post-footer-tags><span class="text-color-light text-small">標籤</span><br><a class="tag tag--primary tag--small" href=https://tingluotw.github.io/tags/tag1/>tag1</a>
+<a class="tag tag--primary tag--small" href=https://tingluotw.github.io/tags/tag2/>tag2</a></div><div class=post-actions-wrap><nav><ul class="post-actions post-action-nav"><li class=post-action><a class="post-action-btn btn btn--disabled"><i class="fa fa-angle-left"></i>
+<span class="hide-xs hide-sm text-small icon-ml">下一篇</span></a></li><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/ data-tooltip="How to install Vim Plugins?"><span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+<i class="fa fa-angle-right"></i></a></li></ul></nav><ul class="post-actions post-action-share"><li class="post-action hide-lg hide-md hide-sm"><a class="post-action-btn btn btn--default btn-open-shareoptions" href=#btn-open-shareoptions><i class="fa fa-share-alt"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://www.facebook.com/sharer/sharer.php?u=https://tingluotw.github.io/2021/06/write_vimrc/"><i class="fa fa-facebook-official"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://twitter.com/intent/tweet?text=https://tingluotw.github.io/2021/06/write_vimrc/"><i class="fa fa-twitter"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://plus.google.com/share?url=https://tingluotw.github.io/2021/06/write_vimrc/"><i class="fa fa-google-plus"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#><i class="fa fa-list"></i></a></li></ul></div></div></article><footer id=footer class=main-content-wrap><span class=copyrights>&copy; 2021 Aa-Ting. All Rights Reserved</span></footer></div><div id=bottom-bar class=post-bottom-bar data-behavior=4><div class=post-actions-wrap><nav><ul class="post-actions post-action-nav"><li class=post-action><a class="post-action-btn btn btn--disabled"><i class="fa fa-angle-left"></i>
+<span class="hide-xs hide-sm text-small icon-ml">下一篇</span></a></li><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://tingluotw.github.io/2021/06/how-to-install-vim-plugins/ data-tooltip="How to install Vim Plugins?"><span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+<i class="fa fa-angle-right"></i></a></li></ul></nav><ul class="post-actions post-action-share"><li class="post-action hide-lg hide-md hide-sm"><a class="post-action-btn btn btn--default btn-open-shareoptions" href=#btn-open-shareoptions><i class="fa fa-share-alt"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://www.facebook.com/sharer/sharer.php?u=https://tingluotw.github.io/2021/06/write_vimrc/"><i class="fa fa-facebook-official"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://twitter.com/intent/tweet?text=https://tingluotw.github.io/2021/06/write_vimrc/"><i class="fa fa-twitter"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://plus.google.com/share?url=https://tingluotw.github.io/2021/06/write_vimrc/"><i class="fa fa-google-plus"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#><i class="fa fa-list"></i></a></li></ul></div></div><div id=share-options-bar class=share-options-bar data-behavior=4><i id=btn-close-shareoptions class="fa fa-close"></i><ul class=share-options><li class=share-option><a class=share-option-btn target=new href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftingluotw.github.io%2F2021%2F06%2Fwrite_vimrc%2F"><i class="fa fa-facebook-official"></i><span>分享到 Facebook</span></a></li><li class=share-option><a class=share-option-btn target=new href="https://twitter.com/intent/tweet?text=https%3A%2F%2Ftingluotw.github.io%2F2021%2F06%2Fwrite_vimrc%2F"><i class="fa fa-twitter"></i><span>分享到 Twitter</span></a></li><li class=share-option><a class=share-option-btn target=new href="https://plus.google.com/share?url=https%3A%2F%2Ftingluotw.github.io%2F2021%2F06%2Fwrite_vimrc%2F"><i class="fa fa-google-plus"></i><span>分享到 Google+</span></a></li></ul></div><div id=share-options-mask class=share-options-mask></div></div><div id=about><div id=about-card><div id=about-btn-close><i class="fa fa-remove"></i></div><img id=about-card-picture src=https://i.imgur.com/TiymI9o.jpg alt=作者的圖片><h4 id=about-card-name>Aa-Ting</h4><div id=about-card-bio>Keep going!</div><div id=about-card-job><i class="fa fa-briefcase"></i><br>Software Engineer</div><div id=about-card-location><i class="fa fa-map-marker"></i><br>Taiwan</div></div></div><div id=cover style=background-image:url(https://i.imgur.com/oUTZJLQ.jpg)></div><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin=anonymous></script><script src=https://tingluotw.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js></script><script lang=javascript>window.onload=updateMinWidth,window.onresize=updateMinWidth,document.getElementById("sidebar").addEventListener("transitionend",updateMinWidth);function updateMinWidth(){var b=document.getElementById("sidebar"),a=document.getElementById("main"),c,d,e;a.style.minWidth="",c=getComputedStyle(a).getPropertyValue("min-width"),d=getComputedStyle(b).getPropertyValue("width"),e=getComputedStyle(b).getPropertyValue("left"),a.style.minWidth=`calc(${c} - ${d} - ${e})`}</script><script>$(document).ready(function(){hljs.configure({classPrefix:'',useBR:!1}),$('pre.code-highlight > code, pre > code').each(function(b,a){$(this).hasClass('codeblock')||$(this).addClass('codeblock'),hljs.highlightBlock(a)})})</script></body></html>
