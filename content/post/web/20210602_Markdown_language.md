@@ -155,6 +155,12 @@ Note: 若文字須以`數字.`為開頭, 可改為`數字\.`
     		<td>Red</td>
   	</tr>
 	</table>
+13. 照片
+	1. 放上imgur: https://imgur.com/
+	2. 語法: ![description](img link)
+		```
+		![Imgur](https://imgur.com/Axh3RZt.png)
+		```
 # Reference
 [1] 十分鐘快速掌握 Markdown: https://wcc723.github.io/development/2019/11/23/ten-mins-learn-markdown/
 
